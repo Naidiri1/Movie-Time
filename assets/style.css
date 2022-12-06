@@ -1,0 +1,70 @@
+:root {
+    --primary: rgb(114, 28, 28);
+    --secondary: rgb(122, 122, 122);
+    --light: rgb(245, 226, 204);
+    --dark: rgb(0, 0, 0);
+    --light2: rgb(176, 180, 176);
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--light);
+    padding: 5px;
+}
+
+.card-header {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+#search-header {
+    display: flex;
+    color: var(--secondary);
+    background-color: var(--light2);
+}
+
+.form-input,
+.btn {
+    display: flex;
+    background-color: var(--light2);
+    color: var(--dark);
+    border-color: var(--dark);
+    border-radius: 10px;
+    margin: auto;
+    height: 35px;
+    width: 50%;
+    border-width: 2px;
+    vertical-align: bottom;
+}
+
+.form-input {
+    width: 200px;
+    margin-top: 230px;
+}
+.btn {
+    width: 84px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+}
+
+/* Below is css for results.html */
+
+#searchedMovie {
+    background-color: var(--primary);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+}
+
+.goBack {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    height: 100vh;
+}
