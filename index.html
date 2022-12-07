@@ -10,15 +10,18 @@
  </head>
  <body>
 <!-- Maid header section with search input and header -->
+<div id="title"></div>
      <section class="">
       <div class="">
         <!-- Main header of the page -->
          <h1 class="text-center">Movie Time</h1>
          <!-- search input form for user to search for movie -->
          <form id="search-form">
-             <input id="search-input" class="form-input" type="text" placeholder="Search for a movie...">
-             <button class="">SEARCH</button>
+             <input id="search-input"  type="text" placeholder="Search for a movie...">
+             <button id="search-button">SEARCH</button>
+             <div id="movie-information"></div>
          </form>
+        
       </div>
      </section>
      <!-- Recent searches -->
@@ -27,7 +30,7 @@
         <div class="recentSearches">
             <!-- Unordered List of recentently searched movies -->
             <ul class="recentSearches" id="searched">
-                <li class="recentSearches" id="recent1"></li>
+                <!-- <li class="recentSearches" id="recent1"></li> -->
             </ul>
         </div>
      </section>
