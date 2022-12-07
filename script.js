@@ -1,9 +1,6 @@
 var OMDbApi = "b7e371de";
 var Url = "http://www.omdbapi.com/?t=joker&apikey=k83ue93";
-var OMDbApi = "b7e371de";
-var Url = "http://www.omdbapi.com/?t=joker&apikey=k83ue93";
 var youtubeApi = "AIzaSyD29ZYd_OaPzWVG9E4nHQq4dGU03yc_OFY";
-//  https://www.googleapis.com/youtube/v3
 //  https://www.googleapis.com/youtube/v3
 var inputEl = document.getElementById("search-input");
 var searchButton = document.getElementById("search-button");
