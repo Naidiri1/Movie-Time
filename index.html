@@ -9,16 +9,31 @@
      <title>Movie Time</title>
  </head>
  <body>
-     <div class="">
-      <div class="card">
-         <h1 class="card-header text-center">Movie Time</h1>
+<!-- Maid header section with search input and header -->
+<div id="title"></div>
+     <section class="">
+      <div class="">
+        <!-- Main header of the page -->
+         <h1 class="text-center">Movie Time</h1>
+         <!-- search input form for user to search for movie -->
          <form id="search-form">
-            <h2 id="search-header">Search for Movies here!</h2>
-             <input id="search-input" class="form-input" type="text" placeholder="Search for a movie...">
-             <button class="btn">SEARCH</button>
+             <input id="search-input"  type="text" placeholder="Search for a movie...">
+             <button id="search-button">SEARCH</button>
+             <div id="movie-information"></div>
          </form>
+        
       </div>
-     </div>
+     </section>
+     <!-- Recent searches -->
+     <section class="recentSearches">
+        <h3 class="recentSearches" id="recentHeader">Recent Searches</h3>
+        <div class="recentSearches">
+            <!-- Unordered List of recentently searched movies -->
+            <ul class="recentSearches" id="searched">
+                <!-- <li class="recentSearches" id="recent1"></li> -->
+            </ul>
+        </div>
+     </section>
      <script src="./assets/script.js"></script>
  </body>
 </html>
