@@ -6,15 +6,28 @@
     --light2: rgb(176, 180, 176);
 }
 
-.back-btn {
-    background-color: blue;
-}
-
-#searchedMovie {
-    display: flex;
-    justify-content: center;
+.header-row {
     background-color: var(--primary);
     color: var(--light);
+}
+
+.arrow {
+    cursor: pointer;
+    border: solid var(--light);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 14px;
+    margin-left: 13px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#searchedMovie {   
+    text-align: center;
 }
 
 #searchInput,
@@ -37,4 +50,7 @@
 .btn {
     width: 84px;
     margin-top: 10px;
+}
+.btn:hover {
+    background-color: var(--secondary);
 }
