@@ -1,35 +1,24 @@
 :root {
     --primary: rgb(114, 28, 28);
     --secondary: rgb(122, 122, 122);
-    --light: rgb(219, 210, 199);
+    --light: rgb(245, 226, 204);
     --dark: rgb(0, 0, 0);
     --light2: rgb(176, 180, 176);
 }
 
-
-
-.card {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+.back-btn {
+    background-color: blue;
 }
 
-.card-header {
-    background-color: var(--primary);
-    color: var(--light);
-    font-size: 50px;
-}
-
-.search-header {
+#searchedMovie {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    padding: 0px;
-    color: var(--secondary);
+    background-color: var(--primary);
+    color: var(--light);
 }
 
-#search-input,
-#search-button {
+#searchInput,
+.btn {
     display: flex;
     background-color: var(--light2);
     border-color: var(--dark);
@@ -41,17 +30,11 @@
     vertical-align: bottom;
 }
 
-#search-input {
+#searchInput {
     width: 200px;
     margin-top: 60px;
 }
-#search-button {
+.btn {
     width: 84px;
     margin-top: 10px;
-    margin-bottom: 400px;
 }
-
-#search-button:hover {
-    background-color: var(--secondary);
-}
-
