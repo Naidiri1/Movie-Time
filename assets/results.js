@@ -1,17 +1,19 @@
 var OMDbApi = "b7e371de";
 var Url = "http://www.omdbapi.com/?t=joker&apikey=k83ue93";
+var OMDbApi = "b7e371de";
+var Url = "http://www.omdbapi.com/?t=joker&apikey=k83ue93";
 var youtubeApi = "AIzaSyD29ZYd_OaPzWVG9E4nHQq4dGU03yc_OFY";
 //  https://www.googleapis.com/youtube/v3
-var inputEl = document.getElementById("search-input");
-var searchButton = document.getElementById("search-button");
+//  https://www.googleapis.com/youtube/v3
+var indexInputEl = document.getElementById("searchInput");
 var movieDisplay = document.getElementById("movie-information");
-var movieInfo;
-searchButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    let searchedValue = inputEl.value;
-getApiData(searchedValue)
 
-})
+var movieInfo;
+var url_string = document.URL
+var url = new URL(url_string);
+var inputV = url.searchParams.get("v");
+
+
 
 function getApiData(input) {
     fetch(`http://www.omdbapi.com/?t=${input}&apikey=b7e371de`)
@@ -21,7 +23,6 @@ function getApiData(input) {
             movieInfo = data;
        console.log(data);
        displayMovieData();
-       saveStorage();
         })
 
 }
@@ -29,14 +30,12 @@ function getApiData(input) {
 
 function displayMovieData (){
 
-//var title = document.getElementById("title")
-//var movietitle = text.textContent(inputEl);
-//title.append(movietitle);
-//title goes at the header 
+var title = document.getElementById("searchedMovie");
+title.textContent = movieInfo.Title;
 movieDisplay.innerHTML = "";
 
 //elements for language, cast, runtime, gender, rating, released date, box office,
-var plotEl =document.createElement("p")
+var plotEl =document.createElement("p");
 var castEl = document.createElement("p");
 var languageEl = document.createElement("p");
 var runTimeEl = document.createElement("p");
@@ -52,7 +51,7 @@ languageEl.textContent = `Language: ${movieInfo.Language}`;
 runTimeEl.textContent = `Run Time: ${movieInfo.Runtime}`;
 genreEl.textContent = `Genre: ${movieInfo.Genre}`;
 releasedEl.textContent = `Realesed Date: ${movieInfo.Released}` 
-//ratingEl.textContent = `Rating (Roten Tomatoes): ${movieInfo.ratings[1].value}`
+ratingEl.textContent = `Rating (Roten Tomatoes): ${movieInfo.Ratings[1].Value}`;
 boxOfficeEl.textContent = `Box Office: ${movieInfo.BoxOffice}`
 
     // We list the div that we want to append the element to
@@ -67,24 +66,5 @@ boxOfficeEl.textContent = `Box Office: ${movieInfo.BoxOffice}`
 }
 
 
-// save to local storage 
-function saveStorage() {
-    // Save movie to local storages
-    var movietitle = [];
-    // Look code quiz local storage to save multiple movies
-    if (localStorage.getItem('recentSearches')) {
-       movietitle = movietitle.concat(localStorage.getItem('recentSearches'))
-    } else {
-       movietitle = [];
-    }
-    movietitle.push(movieInfo.Title);
-    localStorage.setItem("recentSearches", movietitle);
-}
 
-function displayStorage() {
-    // Get localStorage "recentSearches"
-    // Loop the array of pastSearches and create a button for each one
-    // In the loop, append each button to the UL element
-}
-
-// Add an event listener to your UL element that uses event delegation to run pastSearches
+ getApiData(inputV);
