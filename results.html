@@ -12,35 +12,23 @@
 </head>
 
 <body>
+<header class="header" id="">
+    <!-- set a link ref to main page -->
+    <div class="header" id="goBack"></div>
+    <a href="./index.html">BACK</a>
+    <!-- center text of movie searched -->
+    <!-- search input to look up another movie -->
+</header>
+<section class="top-section">
+    <h1 class="movie-information" id="searchedMovie">Searched Movie</h1>
+<div class="movie-information" id="movie-information"></div>
 
-    <!-- header of page displaying a go back link, movie user serched for and an option to search for another movie -->
-    <div class="container-fluid p-0">
-        <div class="row no-gutters header-row">
-            <div class="col-2">
-                <div class="arrow left" id="goBack" onclick="location.assign('index.html')"></div>
-            </div>
-            <div class="col"><h1 class="header" id="searchedMovie">Searched Movie</h1></div>
-            <div class="col-2"></div>
-        </div>
-        <Section class="header" id="">
-            <!-- set a link ref to main page -->
-
-            <!-- center text of movie searched -->
-            
-            <!-- search input to look up another movie -->
-            <input class="header" id="searchInput" type="text" placeholder="Search for a movie...">
-            <button class="btn">SEARCH</button>
-        </Section>
-
-        <!-- main body of page with video of trailer -->
-
-        <section class="player">
-            <!-- append video player  -->
-            <div class="player"></div>
-        </section>
-
-        <!-- portion of page for IMDb data -->
-    </div>
+<!-- main body of page with video of trailer -->
+</section>
+<section class="player">
+    <!-- append video player  -->
+    <div class="player"></div>
+</section>
     <script src="./assets/script.js"></script>
 </body>
 
