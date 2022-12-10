@@ -8,7 +8,7 @@ var youtubeApi = "AIzaSyD29ZYd_OaPzWVG9E4nHQq4dGU03yc_OFY";
 var inputEl = document.getElementById("searchInput");
 var searchButton = document.getElementById("search-button");
 var movieDisplay = document.getElementById("movie-information");
-var moviesListed =document.getElementById("button-list");
+var moviesListed = document.getElementById("button-list");
 var movieInfo;
 
 function redirect(indexSearchedMovie) {
@@ -21,44 +21,62 @@ function redirect(indexSearchedMovie) {
     }
 }
 
-searchButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    let searchedValue = inputEl.value;
-    redirect(searchedValue);
-    // add the button to the local storage list 
-    // create the url and redirect to the results page 
-    saveStorage()
-})
+// searchButton.addEventListener('click', function (event) {
+//     event.preventDefault();
+//     let searchedValue = inputEl.value;
+//     redirect(searchedValue);
+//     // add the button to the local storage list 
+//     // create the url and redirect to the results page 
+//     saveStorage();
+// });
 
 
 
 
 
 // save to local storage 
-function saveStorage(moviesSearched) {
-   
+function saveStorage() {
+
     var movies = JSON.parse(localStorage.getItem("recentSearches"));
-    if(!movies){
+    if (!movies) {
         movies = [];
     }
-    movies.push(inputEl.value)
-   localStorage.setItem("recentSearches", JSON.stringify(movies));
+    movies.push(inputEl.value);
+    localStorage.setItem("recentSearches", JSON.stringify(movies));
 }
 
 
-function displayMovies(){
+function displayMovies() {
 
-    var movies = JSON.parse(localStorage.getItem("recentSearches"));  
-    if(!movies){
+    var movies = JSON.parse(localStorage.getItem("recentSearches"));
+    if (!movies) {
         movies = [];
     }
- 
+    // console.log(movies);
+
     for (let index = 0; index < movies.length; index++) {
         var movieUrl = document.createElement("a");
+        var liEl = document.createElement('li');
         movieUrl.textContent = movies[index];
-        movieUrl.setAttribute("href",  `./results.html?v=${movies[index]}`)
-        moviesListed.append(movieUrl);     
-    }}
-    displayMovies()
+        movieUrl.setAttribute("href", `./results.html?v=${movies[index]}`)
+        liEl.append(movieUrl);
+        moviesListed.append(liEl);
+    }
+};
 
- 
+searchButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    let searchedValue = inputEl.value;
+    redirect(searchedValue);
+    // add the button to the local storage list 
+    // create the url and redirect to the results page 
+    saveStorage();
+});
+
+displayMovies();
+
+// Global Variables at the top
+// Then functions
+// Then event listners
+// Your called functions
+

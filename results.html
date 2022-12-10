@@ -12,27 +12,32 @@
 </head>
 
 <body>
-<header class="header" id="">
-    <!-- set a link ref to main page -->
-    <div class="header" id="goBack"></div>
-    <a href="./index.html">BACK</a>
-    <!-- center text of movie searched -->
-    <!-- search input to look up another movie -->
-</header>
-<section class="top-section">
-    <h1 class="movie-information" id="searchedMovie">Searched Movie</h1>
-<div class="movie-information" id="movie-information"></div>
+    <header class="header" id="">
+        <!-- set a link ref to main page -->
+        <div class="header" id="goBack"></div>
+        <a href="./index.html">BACK</a>
+        <!-- center text of movie searched -->
+        <!-- search input to look up another movie -->
+    </header>
+    <section class="top-section">
+        <h1 class="movie-information" id="searchedMovie">Searched Movie</h1>
+        <div class="movie-information" id="movie-information"></div>
 
-<!-- main body of page with video of trailer -->
-</section>
-<section class="player">
-    <!-- append video player  -->
-    <div class="player"></div>
-</section>
+        <!-- main body of page with video of trailer -->
+    </section>
+    <section class="player">
+        <!-- append video player  -->
 
-<!-- portion of page for IMDb data -->
+        <div class="player"></div>
 
-<script src="./assets/results.js"></script>
+        <!-- Youtube video player -->
+        <iframe id="existing-iframe-example" width="640" height="360" src="#" frameborder="0"
+            style="border: solid 4px #37474F"></iframe>
+    </section>
+    
+    <!-- portion of page for IMDb data -->
+    <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+    <script src="./assets/results.js"></script>
 </body>
 
 </html>
