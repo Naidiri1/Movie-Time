@@ -1,7 +1,5 @@
 var OMDbApi = "b7e371de";
-var Url = "http://www.omdbapi.com/?t=joker&apikey=k83ue93";
 var OMDbApi = "b7e371de";
-var Url = "http://www.omdbapi.com/?t=joker&apikey=k83ue93";
 var indexInputEl = document.getElementById("searchInput");
 var movieDisplay = document.getElementById("movie-information");
 var youtubeVid = document.getElementById('existing-iframe-example');
@@ -39,7 +37,7 @@ function onYouTubeIframeAPIReady() {
 
 // Getting Data from OMBb 
 function getApiData(input) {
-  fetch(`http://www.omdbapi.com/?t=${input}&apikey=b7e371de`)
+  fetch(`https://www.omdbapi.com/?t=${input}&apikey=b7e371de`)
     .then(function (response) {
       return response.json();
     }).then(function (data) {

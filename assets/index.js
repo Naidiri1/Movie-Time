@@ -1,7 +1,5 @@
 var OMDbApi = "b7e371de";
-var Url = "http://www.omdbapi.com/?t=joker&apikey=k83ue93";
 var OMDbApi = "b7e371de";
-var Url = "http://www.omdbapi.com/?t=joker&apikey=k83ue93";
 var inputEl = document.getElementById("searchInput");
 var searchButton = document.getElementById("search-button");
 var movieDisplay = document.getElementById("movie-information");
