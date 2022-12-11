@@ -1,23 +1,19 @@
 :root {
     --primary: rgb(114, 28, 28);
     --secondary: rgb(122, 122, 122);
-    --light: rgb(219, 210, 199);
+    --light: rgb(233, 213, 189);
     --dark: rgb(0, 0, 0);
     --light2: rgb(176, 180, 176);
 }
 
 
 
-.card {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
 
 .card-header {
     background-color: var(--primary);
     color: var(--light);
     font-size: 50px;
+    padding: 15px;
 }
 
 .search-header {
@@ -28,7 +24,9 @@
     color: var(--secondary);
 }
 
-#search-input,
+
+
+#searchInput,
 #search-button {
     display: flex;
     background-color: var(--light2);
@@ -41,7 +39,7 @@
     vertical-align: bottom;
 }
 
-#search-input {
+#searchInput {
     width: 200px;
     margin-top: 60px;
 }
@@ -55,3 +53,6 @@
     background-color: var(--secondary);
 }
 
+.recentSearches {
+    color: var(--secondary);
+}
