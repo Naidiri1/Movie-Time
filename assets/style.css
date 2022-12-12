@@ -48,10 +48,11 @@
 #search-button {
     width: 84px;
     margin-top: 10px;
-    margin-bottom: 400px;
+    margin-bottom: 80px;
 }
 
 #search-button:hover {
     background-color: var(--secondary);
+    list-style-position: inside;
 }
 
