@@ -53,6 +53,10 @@
 
 #search-button:hover {
     background-color: var(--secondary);
+}
+
+.recentSearches {
+    color: var(--secondary);
     list-style-position: inside;
 }
 
