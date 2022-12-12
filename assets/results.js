@@ -69,7 +69,7 @@ function displayMovieData() {
   runTimeEl.textContent = `Run Time: ${movieInfo.Runtime}`;
   genreEl.textContent = `Genre: ${movieInfo.Genre}`;
   releasedEl.textContent = `Realesed Date: ${movieInfo.Released}`
-  ratingEl.textContent = `Rating (Roten Tomatoes): ${movieInfo.Ratings[1].Value}`;
+  ratingEl.textContent = `Rating (Rotten Tomatoes): ${movieInfo.Ratings[1].Value}`;
   boxOfficeEl.textContent = `Box Office: ${movieInfo.BoxOffice}`
 
   // We list the div that we want to append the element to
