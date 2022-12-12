@@ -25,7 +25,7 @@ Evidence of the deployed application with images:
 ![image of the main page appearance](image.png)
 ![image of the result page appearance](image2.png)
 
-- Link to the deploed application: [movie time deployed application](https://naidiri1.github.io/Movie-Time/)
+- Link to the deploed application: [Movie Time deployed application](https://naidiri1.github.io/Movie-Time/)
 
 # Credits #
 
