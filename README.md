@@ -22,10 +22,10 @@ The main page of this project is going to request a name of a movie from the use
 These points of information and the trailer of the movie will be useful to the user to decide what movie to watch.
 
 Evidence of the deployed application with images:
-![image of the main page appearance](image.jpg)
+![image of the main page appearance](image.png)
 ![image of the result page appearance](image2.jpg)
 
-- Link to the deploed application: [movie time deployed application](#)
+- Link to the deploed application: [movie time deployed application](https://naidiri1.github.io/Movie-Time/)
 
 # Credits #
 
